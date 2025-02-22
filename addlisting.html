@@ -13,7 +13,7 @@
                   <i class="fa fa-times" onclick="hideMenu()"></i>
                   <ul>
                       <li><a href="index.html">HOME</a></li>
-                      <li><a href="dashboard.html">AUCTIONS</a></li>
+                      <li><a href="dashboard.html">DRIVERS</a></li>
                       <li><a href="About">ABOUT</a></li>
                       <li><a href="FAQ">FAQ</a></li>
                       <li><a href="account.html">ACCOUNT</a></li>
@@ -22,11 +22,12 @@
               <i class="fa fa-bars" onclick="showMenu()"></i>
           </nav>
       </section>
-      <h1>Add Listing</h1>
+      <h1>Search a Driver's Profile</h1>
       <form action="pull.php" method="post" enctype="multipart/form-data">
-          <input type="number" id="startprice" name="startprice" min="0" step="0.01"><br>
-          <label for="starttime">\date of Birth:</label><br>
-          <input type="datetime-local" id="starttime" name="starttime"><br>
+            <label for="number">Driver ID</label><br>
+          <input type="number" id="driverid" name="driverid" min="0" step="1"><br>
+          <label for="number">Driver ID</label><br>
+
  
           <input type="submit" value="Search Driver">
       </form>
